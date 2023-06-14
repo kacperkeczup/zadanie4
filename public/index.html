@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello JS</title>
+    <style>
+        .item {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .item .title {
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .item .description {
+            display: none;
+        }
+    </style>
+    <script src="js/app.js" defer></script>
+
+</head>
+<body>
+<h1>Zwijane i rozwijane elementy</h1>
+
+<form id="addItemForm">
+    <label for="title">Tytuł:</label>
+    <input type="text" id="title" required>
+    <label for="description">Opis:</label>
+    <textarea id="description" required></textarea>
+    <button type="submit">Dodaj</button>
+</form>
+
+<div id="itemsContainer"></div>
+
+</body>
+</html>
